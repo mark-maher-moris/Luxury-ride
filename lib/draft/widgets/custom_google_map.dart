@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:location/location.dart';
-import 'package:myapp/models/place_model.dart';
-import 'package:myapp/utils/location_service.dart';
+import 'package:myapp/draft/models/place_model.dart';
+import 'package:myapp/draft/utils/location_service.dart';
 import 'dart:ui' as ui;
 
 class CustomGoogleMap extends StatefulWidget {
