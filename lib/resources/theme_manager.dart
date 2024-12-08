@@ -3,10 +3,10 @@ import 'package:myapp/resources/color_manager.dart';
 
 class ThemeManager {
   static ThemeData appTheme = ThemeData(
-      scaffoldBackgroundColor: ColorManager.whiteColor,
+      scaffoldBackgroundColor: ColorManager.blackColor,
       appBarTheme: const AppBarTheme(
         centerTitle: true,
-        backgroundColor: ColorManager.whiteColor,
+        backgroundColor: ColorManager.blackColor,
         surfaceTintColor: ColorManager.whiteColor,
         elevation: 0,
         shadowColor: Colors.transparent,

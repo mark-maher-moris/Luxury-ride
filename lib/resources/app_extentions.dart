@@ -29,6 +29,10 @@ extension AppContext on BuildContext {
         this, MaterialPageRoute(builder: (context) => page));
   }
 
+  Future pushReplacementNamed(String routeName) {
+    return Navigator.pushReplacementNamed(this, routeName);
+  }
+
   void pop() {
     return Navigator.pop(this);
   }
