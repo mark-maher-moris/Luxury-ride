@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "396702745605",
+    "project_id": "uber-clone-37dbf",
+    "storage_bucket": "uber-clone-37dbf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396702745605:android:17303276613e35505d886c",
+        "android_client_info": {
+          "package_name": "com.clinton.luxuryride"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzTocOW9RpPKsheDBRVrvvxPWCNC21yyc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
