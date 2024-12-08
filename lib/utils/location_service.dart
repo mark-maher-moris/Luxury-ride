@@ -24,7 +24,6 @@ class LocationService {
       permissionStatus = await location.requestPermission();
       return permissionStatus == PermissionStatus.granted;
     }
-
     return true;
   }
 

@@ -20,17 +20,21 @@ class _CustomGoogleMapState extends State<CustomGoogleMap> {
 
   late LocationService locationService;
   GoogleMapController? googleMapController;
+  late Location location;
   Set<Marker> markers = {};
   Set<Polyline> polylines = {};
   Set<Polygon> polygons = {};
+
   @override
   void initState() {
     initialCameraPostion = const CameraPosition(
         zoom: 17, target: LatLng(31.187084851056554, 29.928110526889437));
     locationService = LocationService();
+    location == Location();
     updateMyLocation();
     initPolylines();
     initPolygons();
+
     super.initState();
   }
 
@@ -133,5 +137,27 @@ class _CustomGoogleMapState extends State<CustomGoogleMap> {
 
     polygons.add(polygon);
     setState(() {});
+  }
+
+  void getLoctionData() async {
+    location.changeSettings(
+      distanceFilter: 2,
+    );
+    location.onLocationChanged.listen((locationData) {
+      var camerPosition = CameraPosition(
+          target: LatLng(locationData.latitude!, locationData.longitude!),
+          zoom: 15);
+      var myLocationMarker = Marker(
+        markerId: const MarkerId('my_location_marker'),
+        position: LatLng(locationData.latitude!, locationData.longitude!),
+      );
+      markers.add(
+        myLocationMarker,
+      );
+      setState(() {});
+
+      googleMapController
+          ?.animateCamera(CameraUpdate.newCameraPosition(camerPosition));
+    });
   }
 }
