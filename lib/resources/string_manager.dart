@@ -12,4 +12,5 @@ class StringManager {
   static const String continueWith = 'Continue with';
   static const String containue = 'Continue';
   static const String or = 'Or';
+  static const String weSentYouOtp = 'We sent you an OTP';
 }
