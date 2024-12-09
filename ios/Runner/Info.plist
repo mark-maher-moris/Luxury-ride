@@ -20,7 +20,9 @@
 	<string>$(FLUTTER_BUILD_NAME)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
-
+  
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>any text you want</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>we need location access</string>
 

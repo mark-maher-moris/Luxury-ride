@@ -6,6 +6,7 @@ import 'package:myapp/resources/routes_manager.dart';
 import 'package:myapp/resources/theme_manager.dart';
 import 'package:myapp/view/auth/login_screen.dart';
 import 'package:myapp/view/change_language_view.dart';
+import 'package:myapp/view/home/home_view.dart';
 import 'package:myapp/view/splash/splash_view.dart';
 import 'firebase_options.dart';
 
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeManager.appTheme,
       debugShowCheckedModeBanner: false,
       title: 'Luxury Ride',
-      home: LoginScreen(),
+      home: HomeView(),
       onGenerateRoute: (settings) {
         onGenerateRoute(settings);
       },
